@@ -1,0 +1,13 @@
+<%= form_with(model: product, local: true) do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :prize, "Price" %>
+    <%= form.number_field :prize, step: 0.01 %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

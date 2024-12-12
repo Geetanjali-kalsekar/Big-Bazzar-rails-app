@@ -1,0 +1,21 @@
+<%= form_with(model: profile, local: true) do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :contact_no %>
+    <%= form.text_field :contact_no %>
+  </div>
+  <div>
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+  <div>
+    <%= form.label :gender %>
+    <%= form.select :gender, ["Male", "Female", "Other"] %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

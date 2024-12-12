@@ -1,0 +1,21 @@
+<%= form_with(model: [@user, @address], local: true) do |form| %>
+  <div>
+    <%= form.label :colony %>
+    <%= form.text_field :colony %>
+  </div>
+  <div>
+    <%= form.label :city %>
+    <%= form.text_field :city %>
+  </div>
+  <div>
+    <%= form.label :pincode %>
+    <%= form.text_field :pincode %>
+  </div>
+  <div>
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+  <div>
+    <%= form.submit "Create Address" %>
+  </div>
+<% end %>

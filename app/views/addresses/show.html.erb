@@ -1,0 +1,12 @@
+<%= link_to 'Add Address', new_user_address_path(@user) %>
+
+<h1>Address Details</h1>
+
+
+<p><strong>Colony:</strong> <%= @address.colony %></p>
+<p><strong>City:</strong> <%= @address.city %></p>
+<p><strong>Pincode:</strong> <%= @address.pincode %></p>
+<p><strong>Country:</strong> <%= @address.country %></p>
+
+<%= link_to "Edit", edit_address_path(@address) %> |  <!-- Corrected to pass @user and @address -->
+<%= link_to "Back", addresses_path(current_user) %>  <!-- Corrected to pass @user -->
